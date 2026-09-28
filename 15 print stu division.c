@@ -1,0 +1,21 @@
+/*Marks of five subjects: print division */
+#include <stdio.h>
+int main() 
+{
+    float m1, m2, m3, m4, m5, per;
+    printf("Enter marks of five subjects (out of 100 each): ");
+    scanf("%f %f %f %f %f",&m1,&m2,&m3,&m4,&m5);
+    per=(m1+m2+m3+m4+m5)/5;
+    printf("Percentage = %f\n", per);
+    if (per >= 60)
+        printf("First Division\n");
+    else 
+	if (per >= 45)
+        printf("Second Division\n");
+    else 
+	if (per >= 33)
+        printf("Third Division\n");
+    else
+        printf("Fail\n");
+    return 0;
+}
